@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * main - prints all alphabets in lowercase using ASCII code
@@ -31,4 +30,5 @@ void print_alphabet(void)
 	for (letter = 97; letter <= 122; letter++)
 		putchar(letter);
 	putchar('\n');
+	return (0);
 }
