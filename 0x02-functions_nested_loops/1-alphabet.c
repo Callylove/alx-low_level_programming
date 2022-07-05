@@ -1,23 +1,16 @@
 #include "main.h"
-
 /**
- * parent_alphabet - calling in the function using prototype
- * Description - its prints the alphabet in lowercase
- * followed by a newline
- * putchar - putchar function
+ * print_alphabet - prints alphabet in lowercase followed by a new line
  *
- * Return:Alway 0 (Success)
+ * Return: Alway 0 (Success)
  */
-
-void parent_alphabet(void)
+void print_alphabet(void)
 {
-	char l;
+	char d;
 
-	int putchar(int c);
-
-	for (l = 'a'; l <= 'z'; l++)
+	for (d = 'a'; d <= 'z'; d++)
 	{
-		putchar(l);
+		_putchar(d);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
