@@ -1,4 +1,5 @@
 #include "main.h"
+#include "print_alphabet.h"
 
 /**
  * main - prints all alphabets in lowercase using ASCII code
