@@ -12,21 +12,21 @@
 
 void print_line(char *c, int s, int l)
 {
-	int byte, index;
+	int j, k;
 
-	for (byte = 0; byte <= 9; byte++)
+	for (j = 0; j <= 9; j++)
 	{
-		if (byte <= s)
-			printf("%02x", c[l * 10 + byte]);
+		if (j <= s)
+			printf("%02x", c[l * 10 + j]);
 		else
 			printf(" ");
-		if (byte % 2)
-			putchar('');
+		if (j % 2)
+			putchar(' ');
 	}
-	for (index = 0; index <= s; index++)
+	for (k = 0; k <= s; k++)
 	{
-		if (c[l * 10 + index] > 31 && c[l * 10 + index] < 127)
-			putchar(c[l * 10 + index]);
+		if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
+			putchar(c[l * 10 + k]);
 		else
 			putchar('.');
 	}
