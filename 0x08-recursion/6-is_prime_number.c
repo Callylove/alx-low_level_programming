@@ -1,4 +1,4 @@
-#include "maiin.h"
+#include "main.h"
 /**
  * find_multipliers - find multiples of n
  * @n: base number
