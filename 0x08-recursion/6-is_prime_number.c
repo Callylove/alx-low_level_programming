@@ -6,7 +6,7 @@
  *
  * Return: 1 if n is prime, 0 otherwise
  */
-find_multipliers(int n, int i)
+int find_multipliers(int n, int i)
 {
 	if (i == n)
 		return (1);
