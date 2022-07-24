@@ -25,14 +25,14 @@ int main(int argc, char *argv[])
 	n = atoi(argv[1]); /*convert str to int*/
 	if (n <= 0)
 	{
-		prinf("0\n");
+		printf("0\n");
 		return (0);
 	}
 	while (c[a] != '\0')
 	{
 		if (n >= c[a])
 		{
-			t = (n / c[a];
+			t = (n / c[a]);
 			i += t;
 			n -= c[a] * t;
 		}
