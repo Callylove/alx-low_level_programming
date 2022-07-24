@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - coins to make change for an amount of money
@@ -9,31 +11,33 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, n = 0, i, t;
-	int c[5] = {25, 10, 5, 2, 1};
+	int a, n, i, t;
+
+	int c[] = {25, 10, 5, 2, 1};
+
+	a = n = i = t = 0;
 
 	if (argc != 2)
 	{
-		puts("Error");
+		printf("Error\n");
 		return (1);
 	}
-	a = atoi(argv[1]);
-	if (a <= 0)
+	n = atoi(argv[1]); /*convert str to int*/
+	if (n <= 0)
 	{
-		puts("0");
-		return (1);
+		prinf("0\n");
+		return (0);
 	}
-	else
+	while (c[a] != '\0')
 	{
-		for (i  = 0; i < 5; i++)
+		if (n >= c[a])
 		{
-			i = a / c[i];
-			a -= t * c[i];
-			n += t;
-			if (a == 0)
-			break;
+			t = (n / c[a];
+			i += t;
+			n -= c[a] * t;
 		}
+		a++;
 	}
-	printf("%d\n", n);
+	printf("%d\n", i);
 	return (0);
 }
