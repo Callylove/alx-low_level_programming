@@ -95,6 +95,15 @@ void init(char *str, int l)
 		str[i] = '0';
 	str[i] = '\0';
 }
+
+/**
+ * main - multiply two numbers
+ * @argc: number of arguments
+ * @argv: argument vector
+ *
+ * Return: zero, or exit status of 98 if failure
+ */
+
 int main(int argc, char *argv[])
 {
 	int l1, l2, ln, ti, i;
@@ -134,4 +143,4 @@ int main(int argc, char *argv[])
 	}
 	_print(a, ln - 1);
 	return (0);
-}	
+}
