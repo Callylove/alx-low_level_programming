@@ -11,7 +11,7 @@
 struct dog
 {
 	char *name;
-	flost age;
+	float age;
 	char *owner;
 };
 
