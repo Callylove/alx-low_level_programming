@@ -9,7 +9,7 @@
  * Return: if function fails or filename is NULL - 0
  * O/w - the actual number of byte the function should read and print
  */
-int read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t o, w, r;
 	char *buffer;
